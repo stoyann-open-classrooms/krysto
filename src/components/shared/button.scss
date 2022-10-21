@@ -1,0 +1,42 @@
+@import '../../SASS/reset';
+@import '../../SASS/variables';
+@import '../../SASS/placeholders';
+
+.btn {
+    color: $dark;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 0;
+    border-radius: $radius;
+    width: 100%;
+    height: 2rem;
+    color: $light;
+    transition: color $duration;
+    cursor: pointer;
+    margin: 1rem 0;
+  }
+  
+  .btn-primary {
+      background-color: $primary;
+      color: $dark;
+    }
+    
+    .btn-secondary {
+        background-color: $dark;
+    }
+    
+    .btn:hover {
+        background: $primary;
+  }
+  
+  .btn:disabled {
+    background-color: $primary;
+    color: grey;
+    cursor: auto;
+  }
+  
+  .btn:disabled:hover {
+    transform: scale(1);
+    opacity: 1;
+  }
+  

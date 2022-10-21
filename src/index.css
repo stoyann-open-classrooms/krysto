@@ -1,13 +1,121 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+*,
+::before,
+::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
 }
+
+body {
+  font-family: "DM Sans", sans-serif;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  padding: 6.3rem 0 8rem 0;
+  margin: 0 1rem;
+}
+
+body {
+  width: 100%;
+  background-color: #e7e7ef;
+  color: #181819;
+}
+
+main {
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #181819;
+  border-radius: 1.2rem;
+  padding: 3rem 1rem;
+  margin: auto;
+}
+form h2 {
+  text-align: center;
+  color: #e7e7ef;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.file-label {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 1.2rem;
+  font-size: 1.3rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+textarea {
+  height: 150px;
+  font-family: "DM Sans", sans-serif;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 1.2rem;
+}
+
+textarea:focus {
+  border: 1px solid #9097e1;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+}
+select::after {
+  border: none;
+  outline: none;
+}
+
+input {
+  flex-grow: 2;
+  border: none;
+  border-radius: 1.2rem;
+  font-size: 16px;
+  padding: 0.8rem 1rem;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #9097e1;
+}/*# sourceMappingURL=index.css.map */
